@@ -6,7 +6,7 @@ Although typeof bar === "object" is a reliable way of checking if bar is an obje
 
 Therefore, the following code will, to the surprise of most developers, log true (not false) to the console:
 
-var bar = null;
+var bar = null;				
 console.log(typeof bar === "object");  // logs true!
 As long as one is aware of this, the problem can easily be avoided by also checking if bar is null:
 
